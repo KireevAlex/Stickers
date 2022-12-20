@@ -1,10 +1,11 @@
 import React from 'react'
-import Delite_stiker from './Sticker_componends/Delite_stiker'
 import Redax_sticker from './Sticker_componends/Redax_sticker'
 
-export default function Stickers() {
+export default function Stickers({stickers, chengeValueSticker, deliteSticker}) {
   return <div>
-      {/* <Delite_stiker/>
-      <Redax_sticker/> */}
+      <Redax_sticker 
+        stickers={stickers} 
+        chengeValueSticker={chengeValueSticker}
+        deliteSticker= {deliteSticker} />
     </div>
 }
